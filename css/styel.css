@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+ html,body{
+margin: 0;
+box-sizing: border-box;
+overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: #3f4954;
+}
+ul{
+    list-style-type: none;
+}
+h1{
+    font-size: 2.5rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h3{
+    font-size: 1.3rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #096a75;
+    margin: 2rem 1rem 2rem ;
+}
+span{
+    font-family:'Times New Roman', Times, serif;
+}
+.container{
+    margin: 0 5vw;
+}
+p{
+    font-family:monospace;
+    color: #4a515a;
+}
+/*..............x.....................nav................x..............*/
+.nav{
+    background-color: white;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 8.5vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+.nav .nav-brand a{
+font-size: 1.6rem;
+padding:1rem 0 ;
+display: block;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.nav .nav-menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.nav .nav-items{
+    display: flex;
+    margin: 0;
+    
+}
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+}
+.nav .nav-items .nav-link:hover{
+    background-color:#3f4954 ;
+}
+.nav .nav-items .nav-link:hover a{
+    color: #fff;
+}
+.nav .social{
+    padding: 1.4rem 0;
+}
+.nav .social i{
+    padding: 0 .2rem;
+}
+.nav .social i:hover{
+    color: #a1c4cf;
+}
+.nav .toggle-collpase{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+.nav .toggle-collpase .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+.collpase{
+    height: 30rem;
+}
+/*..............x.....................nav................x..............*/
+
+/*...............x....................main content..............x..................*/
+
+/*............x...........site title................x.................*/
+
+main .site-title{
+    background: url("./background.main.jpg");
+     background-color: aqua; 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+main .site-title .site-background{
+    padding-top: 18rem;
+    text-align: center;
+    color:#000000;
+}
+main .site-title h1,h3{
+    margin: .3rem;
+}
+main .site-title .btn{
+    margin: 1.8rem;
+    background-color: skyblue;
+}
+main .site-title .site-background .btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+main .site-title .site-background .btn:hover{
+    background: transparent;
+    border: 1px solid ;
+    color: black;
+}
+/*..............x..............site title..............x..............*/
+/*.................x..............blog carousel..............x............. */
+main .blog{
+    background: url(Abract01.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+    width: 100%;
+    background-size: 65%;
+}
+main .blog .blog-post{
+    padding-top: 6rem;
+}
+main .blog-post .blog-content{
+display: flex;
+flex-direction: column;
+text-align: center;
+width: 70%;
+margin: 3rem 2rem;
+box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+main .blog-content .blog-title{
+    padding: 2rem 0;
+}
+main .blog-content .btn-blog{
+    margin: .5rem;
+    background:  skyblue;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+section .container .owl-nav{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next{
+    color: #3f4954;
+    background: transparent;
+    font-size: 2rem;
+}
+
+
+/*.................x..............blog carousel..............x............. */
+/*................................site content..............................*/
+main .site-content{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+main .post-content{
+    width: 100%;
+    margin-bottom: 5rem;
+}
+main .site-content .post-content>.post-image, .post-title{
+    padding: 1rem 2rem;
+    position: relative;
+}
+main .site-content .post-content>.post-image .post-info{
+    background: #a1c4cf;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0%;
+    left: 20vw;
+    border-radius: 3rem;
+}
+main .site-content .post-content> .post-image > div{
+    overflow: hidden;
+}
+main .site-content .post-content > .post-image .img{
+    width: 100%;
+    transition: all 1s ease;
+}
+main .site-content .post-content > .post-image .img:hover{
+transform: scale(1.3);
+}
+main .site-content .post-content>.post-image .post-info span{
+    margin: 0.5rem;
+}
+main .post-content .post-title a{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+}
+.site-content .post-content .post-title .post-btn{
+    border-radius: 0;
+    padding: 7rem 1.5rem;
+    background: #3f4954;
+}
+
+section .post-title .btn-post-btn{
+    color: #000000;
+    background-color: #7e60ba71;
+    border: none;
+    border-radius: 0rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+.text-gray{
+    color: #3f4954;
+}
+
+.site-content> .sidebar .category-list{
+    font-family: fantasy;
+}
+.site-content> .sidebar .Category-list .list-items{
+    background: #69d4fe;
+    padding: 1rem 1.5rem;
+    margin: 1.2rem 0;
+border-radius: 3rem;
+width: 70%;
+display: flex;
+justify-content: space-between;
+}
+.site-content .sidebar .popular-post .post-content{
+    padding: 1rem 0;
+}
+.site-content .sidebar .popular-post h2{
+    padding-top: 7rem ;
+}
+.site-content .sidebar .popular-post .post-info{
+    padding: 1rem 1rem !important;
+    bottom: 0rem !important;
+    left: 1rem !important;
+    border-radius: 0rem !important;
+    background: white !important;
+}
+.site-content .sidebar .popular-post .post-title a{
+    font-size: 1rem;
+}
+.site-content .sidebar .popular-tags .tag{
+    background: #69d4fe;
+    padding:.4rem 1rem ;
+    border-radius: 3rem;
+}
+
+.popular-tags .tags {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 0.5em;
+    gap: 0.5em;
+}
+/*.........................footer..........................*/
+
+footer.footer{
+    height: 100%;
+    background: #000000;
+    position: relative;
+}
+footer.footer .container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+footer.footer .container>div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem 0rem 1rem 1rem;
+}
+footer.footer .container h2{
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+}
+footer.footer .facebook div>img{
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    margin: .3rem .4rem;
+}
+footer.footer .follow div i{
+    color: white;
+    padding: .4rem;
+}
+footer.footer .right{
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 30%;
+    color: #4a515a;
+}
+footer.footer .right h4 a{
+    color: white;
+}
+footer.footer .move-up{
+    position: absolute;
+    right:6% ;
+    top: 50%;
+}
+footer.footer .move-up span{
+    color:#3f4954;
+}
+footer.footer .move-up span:hover{
+    color: white;
+    cursor: pointer;
+}
+/*.........................footer..........................*/
+
+
+/*................................site content..............................*/
+
+/*................x.................main content..................x..................*/
+
+@media only screen and (max-width: 750px) {
+.nav .nav-menu,.nav .nav-items{
+    flex-direction: column;
+}
+.nav .toggle-collpase{
+    display: initial;
+}
+main .site-content{
+    grid-template-columns: 100%;
+}
+footer.footer .container{
+    grid-template-columns: repeat(1,1fr);
+}
+}
+@media only screen and (max-width:1130px){
+.site-content .post-content> .post-image .post-info{
+    left: 2rem !important;
+    bottom: 1.2rem !important;
+    border-radius: 0% !important;
+}
+.site-content .sidebar .popular-post .post-info{
+    display: none !important;
+}
+footer.footer .container{
+    grid-template-columns: repeat(2,1fr);
+}
+}
+@media only screen and (max-width:520px){
+    main .blog{
+        height: 125dvh;
+    }
+    .site-content .post-content> .post-image .post-info{
+        display: none;
+    }
+    footer.footer .container> div{
+        padding: 1rem .9rem !important;
+    }
+    footer.footer .right{
+        padding: 0 1.4rem;
+    text-align: center;
+    }
+    nav .toggle-collpase{
+        width: 80% !important;
+    }
+}
+@media (max-width:600px){
+    main .site-title{
+     /* width: 700px;   */
+        background-image: url("./minbg.png");
+        background-size: cover;
+        height: 120vh;
+    }
+}
+.image-seo{
+width: 100%;
+height: 80vh;
+display: flex;
+padding-right:0 ;
+padding: 1rem 8rem 1rem 1rem;
+}
+.image-social{
+    width: 100%;
+    margin: 1rem 10rem;
+    display: flex;
+}
+@media (max-width:414px){
+ .image-social{
+    width: 100%;
+    max-height: 50vh;
+margin: 0rem 0 0; 
+padding-left: 0 ;
+} 
+}
+
+@media (max-width:414px){
+    .image-seo{
+        max-width: 100%;
+        max-height: 30vh;
+        padding-right: 0;
+    }
+}
+.right{
+padding-right: 3rem;
+}
+.article1{
+    justify-content: space-between;
+    font-size: 1rem;
+    font-family:sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 5rem;
+}
+h4{ 
+    font-size: 1rem;
+    padding:.1rem 1rem ;
+    border-radius: 3rem;
+    margin: 1rem 1rem 1rem ;
+}
+
+.article1 .pp{
+    color: #000000;
+    margin: .6rem;
+}
+.article1 .pp .tips{
+    font-size: 1.6rem;
+    color: #1f033a;
+    margin: .3rem;
+}
+.hh{
+    color:#1f033a ;
+    margin: 2rem;
+}
+.article1 .mid{
+    font-size: 1.4;
+    margin: 3rem 4rem ;
+    color: #1f033a;
+
+}
+.hg{
+    color: #1f033a;
+    margin: 3.5rem;
+}
+footer .container .about-us .ll{
+    font-size: 1rem;
+    font-weight: 1rem;
+    color: white;
+}
